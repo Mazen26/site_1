@@ -1,20 +1,15 @@
 <!doctype html>
 <html>
   <head>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta charset="utf-8">
-    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
-
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Middleman" %></title>
-
-    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-
-    <%= stylesheet_link_tag :site %>
-    <%= javascript_include_tag :all %>
+    <title>My Site</title>
   </head>
-
-  <body class="<%= page_classes %>">
-    <%= yield %>
-  </body>
+  <body>
+    <h2>Here is the first basic site</h2>
+     <ul>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/portfolio.html">Portfolio</li>
+      <li><a href="/contact.html">Contact</li>
+     </ul>
+     <%= yield %>
+    </body>
 </html>
