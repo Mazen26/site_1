@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>
-    <% current_page.data.title || "Mazen" %></title>
+  <title><% current_page.data.title  || 'Mazen'  %></title>
+
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link rel='stylesheet' id='camera-css' href='css/camera.css' type='text/css' media='all'>
   <!--<#%= stylesheet_link_tag 'bootstrap' do %>-->
   <!--<#%=	type 'text/css' %>-->
   <!--<#% end %>-->
   <!--<#%= stylesheet_link_tag 'font-awesome' %>-->
   <!--<#%= stylesheet_link_tag 'camera' %>-->
 
-  <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css">-->
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-  <link rel='stylesheet' id='camera-css' href='css/camera.css' type='text/css' media='all'>
 
   <link rel="stylesheet" type="text/css" href="css/slicknav.css">
   <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8"/>
@@ -59,116 +60,19 @@
 </head>
 <body>
 
-<!--home start-->
-<div class="headerLine">
-  <div id="menuF" class="default">
-    <div class="container">
-      <div class="row">
-        <div class="logo col-md-4">
-          <div>
-            <% link_to '/index.html' do %>
-                <%= image_tag '/images/mazen2.png' %>
-            <% end %>
-          </div>
-        </div>
-        <div class="col-md-8">
-          <div class="navmenu" style="text-align: center;">
-            <ul id="menu">
-              <li><%= link_to 'Home', '/index.html' %></li>
-              <li><%= link_to 'About', '/about.html' %></li>
-              <li><%= link_to 'Portfolio', '/portfolio.html' %></li>
-              <li><%= link_to 'News', '/news.html' %></li>
-              <li><%= link_to 'Contact', '/contact.html' %></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row wrap">
-      <div class="col-md-12 gallery">
-        <div class="camera_wrap camera_white_skin" id="camera_wrap_1">
-          <div data-thumb="" data-src="images/slides/blank.gif">
-            <div class="img-responsive camera_caption fadeFromBottom">
-              <h2>Long sighted.</h2>
-            </div>
-          </div>
-          <div data-thumb="" data-src="images/slides/blank.gif">
-            <div class="img-responsive camera_caption fadeFromBottom">
-              <h2>Advanced Listener.</h2>
-            </div>
-          </div>
-          <div data-thumb="" data-src="images/slides/blank.gif">
-            <div class="img-responsive camera_caption fadeFromBottom">
-              <h2>Well rounded..Literally.</h2>
-            </div>
-          </div>
-        </div><!-- #camera_wrap_1 -->
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!--about start-->
-
+<%=	 partial "header" %>
 
 <%= yield %>
 
-<div class="line7">
-  <div class="container">
-    <div class="row footer">
-      <div class="col-md-12">
-        <h3>Stya in the loop</h3>
-        <p>Your prefred social platform, and my updates .... how hard could it be to keep up! </p>
-      </div>
-      <div class="soc col-md-12">
-        <ul>
-          <!--<li class="soc1"><%#=	 link_to '', 'https://se.linkedin.com/in/mazen-zayat-3088571a' %></li>-->
-          <li class="soc1"><a href="https://se.linkedin.com/in/mazen-zayat-3088571a" target="_blank"></a></li>
-          <li class="soc2"><a href="https://www.facebook.com/mezo26" target="_blank"></a></li>
-          <li class="soc3"><a href="https://twitter.com/mmeezzoo26" target="_blank"></a></li>
-          <li class="soc4"><a href="#"></a></li>
-          <li class="soc5"><a href="#"></a></li>
-          <li class="soc6"><a href="#"></a></li>
-          <li class="soc7"><a href="#"></a></li>
-          <li class="soc8"><a href="#"></a></li>
-
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="lineBlack">
-  <div class="container">
-    <div class="row downLine">
-      <div class="col-md-12 text-right">
-        <!--input  id="searchPattern" type="search" name="pattern" value="Search the Site" onblur="if(this.value=='') {this.value='Search the Site'; }" onfocus="if(this.value =='Search the Site' ) this.value='';this.style.fontStyle='normal';" style="font-style: normal;"/-->
-        <input id="searchPattern" type="search" placeholder="Search the Site"/><i class="glyphicon glyphicon-search" style="font-size: 13px; color:#a5a5a5;" id="iS"></i>
-      </div>
-      <div class="col-md-6 text-left copy">
-        <p> &copy; 2016 Mazen!</p>
-      </div>
-      <div class="col-md-6 text-right dm">
-        <ul id="downMenu">
-          <li class="active"><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#project1">Projects</a></li>
-          <li><a href="#news">News</a></li>
-          <li class="last"><a href="#contact">Contact</a></li>
-          <!--li><a href="#features">Features</a></li-->
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+<%=	 partial "footer" %>
 
 
 <script src="javascripts/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
-<script src="javascripts/bootstrap.min.js"></script>
-<script src="javascripts/jquery.slicknav.js"></script>
+<!--<script src="javascripts/bootstrap.min.js"></script>-->
+<!--<script src="javascripts/jquery.slicknav.js"></script>-->
+<%= javascript_include_tag 'bootstrap.min' %>
+<%= javascript_include_tag 'jquery.slicknav' %>
+
 <script>
   $(document).ready(function () {
     $(".bhide").click(function () {
