@@ -7,14 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-  <link rel='stylesheet' id='camera-css' href='css/camera.css' type='text/css' media='all'>
+  <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css">-->
+  <%= stylesheet_link_tag 'css/bootstrap', type: 'text/css' %>
+  <%= stylesheet_link_tag 'css/font-awesome.css', type: 'text/css' %>
+  <%= stylesheet_link_tag 'css/camera.css', type: 'text/css' %>
+  <!--<link rel="stylesheet" type="text/css" href="css/font-awesome.css">-->
+  <!--<link rel='stylesheet' id='camera-css' href='css/camera.css' type='text/css' media='all'>-->
+
   <!--<#%= stylesheet_link_tag 'bootstrap' do %>-->
   <!--<#%=	type 'text/css' %>-->
   <!--<#% end %>-->
   <!--<#%= stylesheet_link_tag 'font-awesome', type: :text %>-->
-  <!--<#%= stylesheet_link_tag 'camera', id: :camera-css , type: :text , media: :all %>-->
+
 
 
 
@@ -69,10 +73,8 @@
 <%=	 partial "footer" %>
 
 
-<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
-<!--<script src="javascripts/bootstrap.min.js"></script>-->
-<!--<script src="javascripts/jquery.slicknav.js"></script>-->
-<%= javascript_include_tag 'bootstrap.min' %>
+<%= javascript_include_tag 'jquery.prettyPhoto.js', type: "text/javascript", charset: "utf-8" %>
+<%= javascript_include_tag 'bootstrap.min', type: "text/javascript", charset: "utf-8" %>
 <%= javascript_include_tag 'jquery.slicknav' %>
 
 <script>
