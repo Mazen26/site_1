@@ -191,36 +191,19 @@ title: Mazen
           </div>
         </div>
 
-        <div class="element col-sm-4  gall coding">
-          <a class="plS" href="/portfolio.html" rel="prettyPhoto[gallery2]">
-            <img class="img-responsive picsGall" src="images/prettyPhotoImages/middleman.png" alt="Coding"/>
+
+        <div class="element col-sm-4  gall alumni">
+          <a class="plS" >
+            <% link_to 'https://www.alumni.ox.ac.uk/', target: '_blank' do %>
+                <%= image_tag 'images/prettyPhotoImages/oxfordlogo.png',class: 'img-responsive picsGall' ,alt: 'Alumni' %>
+            <% end %>
           </a>
           <div class="view project_descr ">
-            <h3><a href="/portfolio.html">Mazen - middleman simple site</a></h3>
+            <h3><%= link_to 'Oxford Alumni', 'https://www.alumni.ox.ac.uk/', target: '_blank' %></h3>
             <ul><li></li></ul>
           </div>
         </div>
-
-        <div class="element col-sm-4  gall  alumni">
-          <a class="plS" href="https://www.alumni.ox.ac.uk/" target="_blank" rel="prettyPhoto[gallery2]">
-            <img class="img-responsive picsGall" src="images/prettyPhotoImages/oxfordlogo.png" alt="Oxford Alumni"/>
-          </a>
-          <div class="view project_descr ">
-            <h3><a href="https://www.alumni.ox.ac.uk/">Oxford Alumni</a></h3>
-            <ul><li></li></ul>
-          </div>
-        </div>
-
-        <div class="element col-sm-4  gall  psr">
-          <a class="plS" href="http://www.agileventures.org/" rel="prettyPhoto[gallery2]">
-            <img class="img-responsive picsGall" src="images/prettyPhotoImages/agile.png" alt="Agile Ventures"/>
-          </a>
-          <div class="view project_descr center">
-            <h3><a href="http://www.agileventures.org/">Member- Agile Ventures</a></h3>
-            <ul><li></li></ul>
-          </div>
-        </div>
-
+        
         <div class="element col-sm-4  gall  hobbies">
           <a class="plS"  rel="prettyPhoto[gallery2]">
             <img class="img-responsive picsGall" src="/images/prettyPhotoImages/diy.png" alt="DIY"/>
@@ -231,22 +214,41 @@ title: Mazen
           </div>
         </div>
 
-        <div class="element col-sm-4  gall  alumni">
-          <a class="plS" href="http://www.hiba.edu.sy/index.php?id=1" target="_blank" rel="prettyPhoto[gallery2]">
-            <img class="img-responsive picsGall" src="/images/prettyPhotoImages/hiba.png" alt="HIBA MBA"/>
+
+        <div class="element col-sm-4  gall alumni">
+          <a class="plS" >
+            <% link_to 'http://www.hiba.edu.sy/index.php?id=1', target: '_blank' do %>
+                <%= image_tag 'images/prettyPhotoImages/hiba.png',class: 'img-responsive picsGall' ,alt: 'Alumni' %>
+            <% end %>
           </a>
-          <div class="view project_descr center">
-            <h3><a href="http://www.hiba.edu.sy/index.php?id=1">HIBA- MBA</a></h3>
+          <div class="view project_descr ">
+            <h3><%= link_to 'HIBA- MBA', 'http://www.hiba.edu.sy/index.php?id=1', target: '_blank' %></h3>
             <ul><li></li></ul>
           </div>
         </div>
 
-        <div class="element col-sm-4  gall  psr">
-          <a class="plS" href="http://www.britishsyriansociety.org/" rel="prettyPhoto[gallery2]">
-            <img class="img-responsive picsGall" src="/images/prettyPhotoImages/bss.png" alt="British Syrian Society"/>
+
+        <div class="element col-sm-4  gall psr">
+          <a class="plS" >
+            <% link_to 'http://www.agileventures.org/', target: '_blank' do %>
+                <%= image_tag 'images/prettyPhotoImages/agile.png',class: 'img-responsive picsGall' ,alt: 'Personal Social Responsibility' %>
+            <% end %>
           </a>
-          <div class="view project_descr center">
-            <h3><a href="http://www.britishsyriansociety.org/">Platinum member- BSS</a></h3>
+          <div class="view project_descr ">
+            <h3><%= link_to 'Member- Agile Ventures', 'http://www.agileventures.org/', target: '_blank' %></h3>
+            <ul><li></li></ul>
+          </div>
+        </div>
+
+
+        <div class="element col-sm-4  gall psr">
+          <a class="plS" >
+            <% link_to 'http://www.britishsyriansociety.org/', target: '_blank' do %>
+                <%= image_tag 'images/prettyPhotoImages/bss.png',class: 'img-responsive picsGall' ,alt: 'Personal Social Responsibility' %>
+            <% end %>
+          </a>
+          <div class="view project_descr ">
+            <h3><%= link_to 'Platinum member- BSS', 'http://www.britishsyriansociety.org/', target: '_blank' %></h3>
             <ul><li></li></ul>
           </div>
         </div>
@@ -261,32 +263,39 @@ title: Mazen
           </div>
         </div>
 
-        <div class="element col-sm-4  gall  psr">
-          <a class="plS" href="http://400contacts.eu-gb.mybluemix.net/explore" rel="prettyPhoto[gallery2]">
-            <img class="img-responsive picsGall" src="/images/prettyPhotoImages/400cont.png" alt="400 Contacts"/>
+        <div class="element col-sm-4  gall psr">
+          <a class="plS" >
+            <% link_to 'http://400contacts.eu-gb.mybluemix.net/explore', target: '_blank' do %>
+                <%= image_tag 'images/prettyPhotoImages/400cont.png',class: 'img-responsive picsGall' ,alt: 'Personal Social Responsibility' %>
+            <% end %>
           </a>
-          <div class="view project_descr center">
-            <h3><a href="http://400contacts.eu-gb.mybluemix.net/explore">Mentor - 400Contacts</a></h3>
+          <div class="view project_descr ">
+            <h3><%= link_to 'Mentor - 400Contacts', 'http://400contacts.eu-gb.mybluemix.net/explore', target: '_blank' %></h3>
             <ul><li></li></ul>
           </div>
         </div>
 
-        <div class="element col-sm-4  gall  hobbies">
-          <a class="plS" href="/rc.html" rel="prettyPhoto[gallery2]">
-            <img class="img-responsive picsGall" src="/images/prettyPhotoImages/IMG_4353.png" alt="Nitro RC"/>
+
+        <div class="element col-sm-4  gall hobbies">
+          <a class="plS" >
+            <% link_to '/rc.html', target: '_blank' do %>
+                <%= image_tag 'images/prettyPhotoImages/IMG_4353.png',class: 'img-responsive picsGall' ,alt: 'Hobby' %>
+            <% end %>
           </a>
-          <div class="view project_descr center">
-            <h3><a href="/rc.html">RC - Nitro and drift RC cars</a></h3>
+          <div class="view project_descr ">
+            <h3><%= link_to 'RC - Nitro and drift RC car', '/rc.html', target: '_blank' %></h3>
             <ul><li></li></ul>
           </div>
         </div>
 
-        <div class="element col-sm-4  gall  experience">
-          <a class="plS" href="/about.html" rel="prettyPhoto[gallery2]">
-            <img class="img-responsive picsGall" src="/images/prettyPhotoImages/coding.png" alt="Coding"/>
+        <div class="element col-sm-4  gall experience">
+          <a class="plS" >
+            <% link_to '/about.html' do %>
+                <%= image_tag 'images/prettyPhotoImages/coding.png',class: 'img-responsive picsGall' ,alt: 'Experience' %>
+            <% end %>
           </a>
-          <div class="view project_descr center">
-            <h3><a href="/about.html">Coding- junior developer</a></h3>
+          <div class="view project_descr ">
+            <h3><%= link_to 'Coding- junior developer', '/about.html' %></h3>
             <ul><li></li></ul>
           </div>
         </div>
@@ -301,135 +310,143 @@ title: Mazen
           </div>
         </div>
 
-        <div class="element col-sm-4  gall  experience">
-          <a class="plS" href="/about.html" rel="prettyPhoto[gallery2]">
-            <img class="img-responsive picsGall" src="/images/prettyPhotoImages/10years.png" alt="Time"/>
-          </a>
-          <div class="view project_descr center">
-            <h3><a href="/about.html">10 Years multinationals</a></h3>
-            <ul><li></li></ul>
-          </div>
-        </div>
 
-        <div class="element col-sm-4  gall  alumni">
-          <a class="plS" href="http://damasuniv.edu.sy/english/" target="_blank" rel="prettyPhoto[gallery2]">
-            <img class="img-responsive picsGall" src="/images/prettyPhotoImages/damascusuni.png" alt="Damascus University"/>
-          </a>
-          <div class="view project_descr center">
-            <h3><a href="http://damasuniv.edu.sy/english/">Damascus University</a></h3>
-            <ul><li></li></ul>
-          </div>
-        </div>
-
-        <div class="element col-sm-4   gall coding">
-          <a class="plS" href="/portfolio.html" rel="prettyPhoto[gallery2]">
-            <img class="img-responsive picsGall" src="images/prettyPhotoImages/js.png" alt="Coding"/>
+        <div class="element col-sm-4  gall experience">
+          <a class="plS" >
+            <% link_to '/about.html' do %>
+                <%= image_tag 'images/prettyPhotoImages/10years.png',class: 'img-responsive picsGall' ,alt: 'Experience' %>
+            <% end %>
           </a>
           <div class="view project_descr ">
-            <h3><a href="/portfolio.html">BMI calculator- Simple JS project</a></h3>
-            <ul><li></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="element col-sm-4  gall  experience">
-          <a class="plS" href="/about.html" rel="prettyPhoto[gallery2]">
-            <img class="img-responsive picsGall" src="/images/prettyPhotoImages/fmcg.png" alt="FMCG"/>
-          </a>
-          <div class="view project_descr center">
-            <h3><a href="/about.html">FMCG, Cusotmer managment</a></h3>
+            <h3><%= link_to '12 Years multinationals', '/about.html' %></h3>
             <ul><li></li></ul>
           </div>
         </div>
 
-        <div class="element col-sm-4  gall  psr">
-          <a class="plS" href="http://www.i2aid.org/" rel="prettyPhoto[gallery2]">
-            <img class="img-responsive picsGall" src="/images/prettyPhotoImages/i2aid.png" alt="I2aid"/>
-          </a>
-          <div class="view project_descr center">
-            <h3><a href="http://www.i2aid.org/">Founder - I2aid</a></h3>
-            <ul><li></li></ul>
-          </div>
-        </div>
 
-        <div class="element col-sm-4  gall  experience">
-          <a class="plS" href="/about.html" rel="prettyPhoto[gallery2]">
-            <img class="img-responsive picsGall" src="/images/prettyPhotoImages/bizdev.png" alt="Business Development"/>
+        <div class="element col-sm-4  gall alumni">
+          <a class="plS" >
+            <% link_to 'http://damasuniv.edu.sy/english/', target: '_blank' do %>
+                <%= image_tag 'images/prettyPhotoImages/damascusuni.png',class: 'img-responsive picsGall' ,alt: 'Alumni' %>
+            <% end %>
           </a>
-          <div class="view project_descr center">
-            <h3><a href="/about.html">Negotiation, business development</a></h3>
-            <ul><li></li></ul>
-          </div>
-        </div>
-
-        <div class="element col-sm-4  gall  experience">
-          <a class="plS" href="/about.html" rel="prettyPhoto[gallery2]">
-            <img class="img-responsive picsGall" src="/images/prettyPhotoImages/remote.png" alt="Remote Team"/>
-          </a>
-          <div class="view project_descr center">
-            <h3><a href="/about.html">Matrix and remote team leadership</a></h3>
-            <ul><li></li></ul>
-          </div>
-        </div>
-
-        <div class="element col-sm-4  gall  experience">
-          <a class="plS" href="/about.html" rel="prettyPhoto[gallery2]">
-            <img class="img-responsive picsGall" src="/images/prettyPhotoImages/educaiton.png" alt="Education"/>
-          </a>
-          <div class="view project_descr center">
-            <h3><a href="/about.html">Fine educated </a></h3>
-            <ul><li></li></ul>
-          </div>
-        </div>
-
-        <div class="element col-sm-4  gall  experience">
-          <a class="plS" href="/about.html" rel="prettyPhoto[gallery2]">
-            <img class="img-responsive picsGall" src="images/prettyPhotoImages/mentor.png" alt="Mentoring"/>
-          </a>
-          <div class="view project_descr center">
-            <h3><a href="/about.html">Mentoring & Capacity building</a></h3>
+          <div class="view project_descr ">
+            <h3><%= link_to 'Damascus University', 'http://damasuniv.edu.sy/english/', target: '_blank' %></h3>
             <ul><li></li></ul>
           </div>
         </div>
 
         <div class="element col-sm-4  gall coding">
-          <a class="plS" href="/portfolio.html" rel="prettyPhoto[gallery2]">
-            <img class="img-responsive picsGall" src="images/prettyPhotoImages/sinatra.png" alt="Coding"/>
+          <a class="plS" >
+            <% link_to '/portfolio.html' do %>
+                <%= image_tag 'images/prettyPhotoImages/js.png',class: 'img-responsive picsGall' ,alt: 'Coding' %>
+            <% end %>
           </a>
-          <div class="view project_descr center">
-            <h3><a href="/portfolio.html">SlowFood - Sinatra/DataMapper app</a></h3>
+          <div class="view project_descr ">
+            <h3><%= link_to 'BMI calculator- Simple JS project', '/portfolio.html' %></h3>
             <ul><li></li></ul>
           </div>
         </div>
 
-        <div class="element col-sm-4  gall  experience">
-          <a class="plS" href="/about.html" rel="prettyPhoto[gallery2]">
-            <img class="img-responsive picsGall" src="/images/prettyPhotoImages/ecosys.png" alt="Ecosystems"/>
+        <div class="element col-sm-4  gall experience">
+          <a class="plS" >
+            <% link_to '/about.html' do %>
+                <%= image_tag 'images/prettyPhotoImages/fmcg.png',class: 'img-responsive picsGall' ,alt: 'Experience' %>
+            <% end %>
           </a>
-          <div class="view project_descr center">
-            <h3><a href="/about.html">Enterprunership and ecosystems</a></h3>
+          <div class="view project_descr ">
+            <h3><%= link_to 'FMCG, Cusotmer managment', '/about.html' %></h3>
             <ul><li></li></ul>
           </div>
         </div>
+
+        <div class="element col-sm-4  gall psr">
+          <a class="plS" >
+            <% link_to 'http://www.i2aid.org/', target: '_blank' do %>
+                <%= image_tag 'images/prettyPhotoImages/i2aid.png',class: 'img-responsive picsGall' ,alt: 'Personal Social Responsibility' %>
+            <% end %>
+          </a>
+          <div class="view project_descr ">
+            <h3><%= link_to 'Founder - I2aid', 'http://www.i2aid.org/', target: '_blank' %></h3>
+            <ul><li></li></ul>
+          </div>
+        </div>
+
+
+        <div class="element col-sm-4  gall experience">
+          <a class="plS" >
+            <% link_to '/about.html' do %>
+                <%= image_tag 'images/prettyPhotoImages/bizdev.png',class: 'img-responsive picsGall' ,alt: 'Experience' %>
+            <% end %>
+          </a>
+          <div class="view project_descr ">
+            <h3><%= link_to 'Negotiation, business development', '/about.html' %></h3>
+            <ul><li></li></ul>
+          </div>
+        </div>
+
+        <div class="element col-sm-4  gall experience">
+          <a class="plS" >
+            <% link_to '/about.html' do %>
+                <%= image_tag 'images/prettyPhotoImages/remote.png',class: 'img-responsive picsGall' ,alt: 'Experience' %>
+            <% end %>
+          </a>
+          <div class="view project_descr ">
+            <h3><%= link_to 'Matrix and remote team leadership', '/about.html' %></h3>
+            <ul><li></li></ul>
+          </div>
+        </div>
+
+        <div class="element col-sm-4  gall experience">
+          <a class="plS" >
+            <% link_to '/about.html' do %>
+                <%= image_tag 'images/prettyPhotoImages/educaiton.png',class: 'img-responsive picsGall' ,alt: 'Experience' %>
+            <% end %>
+          </a>
+          <div class="view project_descr ">
+            <h3><%= link_to 'Fine educated', '/about.html' %></h3>
+            <ul><li></li></ul>
+          </div>
+        </div>
+
+        <div class="element col-sm-4  gall experience">
+          <a class="plS" >
+            <% link_to '/about.html' do %>
+                <%= image_tag 'images/prettyPhotoImages/mentor.png',class: 'img-responsive picsGall' ,alt: 'Experience' %>
+            <% end %>
+          </a>
+          <div class="view project_descr ">
+            <h3><%= link_to 'Mentoring & Capacity building', '/about.html' %></h3>
+            <ul><li></li></ul>
+          </div>
+        </div>
+
+
+        <div class="element col-sm-4  gall coding">
+          <a class="plS" >
+            <% link_to '/portfolio.html' do %>
+                <%= image_tag 'images/prettyPhotoImages/sinatra.png',class: 'img-responsive picsGall' ,alt: 'Coding' %>
+            <% end %>
+          </a>
+          <div class="view project_descr ">
+            <h3><%= link_to 'SlowFood - Sinatra/DataMapper app', '/portfolio.html' %></h3>
+            <ul><li></li></ul>
+          </div>
+        </div>
+
+        <div class="element col-sm-4  gall experience">
+          <a class="plS" >
+            <% link_to '/about.html' do %>
+                <%= image_tag 'images/prettyPhotoImages/ecosys.png',class: 'img-responsive picsGall' ,alt: 'Experience' %>
+            <% end %>
+          </a>
+          <div class="view project_descr ">
+            <h3><%= link_to 'Enterprunership and ecosystems', '/about.html' %></h3>
+            <ul><li></li></ul>
+          </div>
+        </div>
+
       </div>
-
-
-
-      <!--<div class="col-md-12 cBtn  lb" style="text-align: center;">-->
-        <!--<ul class="load_more_cont ">-->
-          <!--<li class="dowbload btn_load_more">-->
-            <!--<a href="javascript:void(0);" >-->
-              <!--<i class="fa fa-arrow-down"></i> More Projects-->
-            <!--</a>-->
-          <!--</li>-->
-          <!--<li class="buy">-->
-            <!--<a href="#">-->
-              <!--<i class="fa fa-shopping-cart"></i>Buy on Themeforest-->
-            <!--</a>-->
-          <!--</li>-->
-        <!--</ul>-->
-      <!--</div>-->
-
     </div>
 
     <script type="text/javascript">
