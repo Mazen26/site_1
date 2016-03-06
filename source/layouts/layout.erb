@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
   <title><%= current_page.data.title %></title>
 
   <meta charset="utf-8"/>
@@ -179,6 +180,15 @@
     });
 
   });
+</script>
+
+<script type="text/javascript">
+  window.doorbellOptions = {
+    appKey: 'wP8Zr68vRQ1YPlL9WZqy1UgYbnW8JjY040rK2aYp3kKi18hN6jXyFlhZVGzersvC'
+  };
+  (function(d, t) {
+    var g = d.createElement(t);g.id = 'doorbellScript';g.type = 'text/javascript';g.async = true;g.src = 'https://embed.doorbell.io/button/3333?t='+(new Date().getTime());(d.getElementsByTagName('head')[0]||d.getElementsByTagName('body')[0]).appendChild(g);
+  }(document, 'script'));
 </script>
 </body>
 
