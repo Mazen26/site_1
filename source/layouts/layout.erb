@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <title><%= current_page.data.title %></title>
+  <%=	 partial 'analytics' %>
 
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,11 +24,11 @@
 </head>
 <body>
 
-<%=	 partial "header" %>
+<%=	 partial 'header' %>
 
 <%= yield %>
 
-<%=	 partial "footer" %>
+<%=	 partial 'footer' %>
 
 
 <%#= javascript_include_tag 'jquery.prettyPhoto.js', type: "text/javascript", charset: "utf-8" %>
