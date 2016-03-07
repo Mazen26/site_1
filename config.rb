@@ -2,6 +2,10 @@
 # Page options, layouts, aliases and proxies
 ###
 
+# For custom domains on github pages
+page 'CNAME', layout: false
+
+
 activate :relative_assets
 set :relative_links, true
 
@@ -42,15 +46,25 @@ end
 
 # Build-specific configuration
 configure :build do
-  # Minify CSS on build
-  # activate :minify_css
+  # Any files you want to ignore:
+  ignore '/admin/*'
+
+  # For example, change the Compass output style for deployment
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
+
+  # Enable cache buster
+  activate :asset_hash
+
+  # Use relative URLs
+  activate :relative_assets
 end
 
 activate :deploy do |deploy|
   deploy.deploy_method = :git
+  deploy.build_before = true
   # Optional Settings
   # deploy.remote   = 'custom-remote' # remote name or git url, default: origin
   # deploy.branch   = 'custom-branch' # default: gh-pages
