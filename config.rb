@@ -3,11 +3,11 @@
 ###
 
 # For custom domains on github pages
-page 'CNAME', layout: false
+page "CNAME", layout: false
 
 
-activate :relative_assets
-set :relative_links, true
+# activate :relative_assets
+# set :relative_links, true
 
 # activate :directory_indexes
 
@@ -47,13 +47,13 @@ end
 # Build-specific configuration
 configure :build do
   # Any files you want to ignore:
-  ignore '/admin/*'
+  # ignore '/admin/*'
 
   # For example, change the Compass output style for deployment
-  activate :minify_css
+  # activate :minify_css
 
   # Minify Javascript on build
-  activate :minify_javascript
+  # activate :minify_javascript
 
   # Enable cache buster
   activate :asset_hash
