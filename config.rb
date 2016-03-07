@@ -3,7 +3,7 @@
 ###
 
 # For custom domains on github pages
-page "CNAME", layout: false
+# page "CNAME", layout: false
 
 
 # activate :relative_assets
